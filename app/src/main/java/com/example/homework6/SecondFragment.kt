@@ -45,6 +45,7 @@ class SecondFragment : Fragment() {
                 if (a>=max){
                     btnReset.visibility = View.VISIBLE
                 }else{
+                    Thread.sleep(5000)
                     a++
                     publishProgress(a)
                 }
@@ -53,6 +54,7 @@ class SecondFragment : Fragment() {
                 if (a<=min){
                     btnReset.visibility = View.VISIBLE
                 }else{
+                    Thread.sleep(5000)
                     a--
                     publishProgress(a)
                 }
